@@ -1,0 +1,13 @@
+:root {
+    --primary-color: white;
+    --secondary-color: gray;
+    --font-color: black;
+}
+
+body {
+    background: var(--primary-color);
+}
+
+body {
+color: var(--font-color);
+}

@@ -5,7 +5,25 @@
 
 <head> 
 
-<title>Страница авторизации</title>
+    <link rel=”stylesheet” href=”css/pisapopia.css”> 
+
+    <title>Страница авторизации</title>
+    <style>
+        :root {
+            --primary-color: white;
+            --secondary-color: gray;
+            --font-color: black;
+        }
+        
+        body {
+            background: var(--primary-color);
+        }
+        
+        body {
+        color: var(--font-color);
+        }
+
+    </style>
 
 </head>
 
@@ -20,12 +38,22 @@
     <label>Password:</label>
     <input type="password" id="password" placeholder="Пароль">
     
+
+
     <br><br>
     <input type="button" value="Нажми на меня нежно" onclick="login()">
     <br><br>
     <input type="button" value="Нажми на меня более нежно" onclick="login1()">
     <br><br>
     <input type="button" value="Нажми на меня ЕЩЕ более нежно" onclick="login2()">
+    <br><br>
+    <div>
+        <input type="button" onclick="changeTheme('light')" value="Тема 1">
+        <input type="button" onclick="changeTheme('dark')" value="Тема 2">
+        
+        <input type="button" onclick="changeTheme('dark-blue')" value="Тема 3">
+        <input type="button" onclick="changeTheme('teplaya')" value="Тема теплого цвета абрикоса">
+    </div>
 
 </body>
 
@@ -53,6 +81,36 @@
             alert("Вы не писяпопа, вы - " + username)
         }
     }
+
+    function changeTheme(themeName) {
+        var primaryColor;
+        var secondaryColor;
+        var fontColor
+
+        if (themeName == 'light') {
+            primaryColor = "white";
+            secondaryColor = "gray";
+            fontColor = "black";
+        }
+        if (themeName == 'dark') {
+            primaryColor = "#303030";
+            secondaryColor = "#eee";
+            fontColor = "white";
+        }
+        if (themeName == 'dark-blue') {
+            primaryColor = "#16085b";
+            secondaryColor = "#eee";
+            fontColor = "white";
+        }
+        if (themeName == 'teplaya') {
+            primaryColor = "#F9C76F";
+            secondaryColor = "#eee";
+            fontColor = "black";
+        }
+            document.documentElement.style.setProperty("--primary-color", primaryColor)
+            document.documentElement.style.setProperty("--secondary-color", secondaryColor)
+            document.documentElement.style.setProperty("--font-color", fontColor)
+    };
 </script>
 
 </html>
