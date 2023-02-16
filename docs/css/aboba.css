@@ -1,0 +1,127 @@
+.btn {
+    display: inline-block; 
+    background: #ffffff; 
+    color: #000000; 
+    padding: 15px 18px; 
+    padding-top: 23px;
+    text-decoration: none; 
+    border-radius: 15px; 
+
+    margin: 0px 20px 5px 20px;
+    line-height: 100%;
+}
+
+a.addbtn {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 70px 70px; 
+    padding-top: 140px;
+    padding-bottom: 130px;
+}
+
+a.addbtn:hover {
+    background-image: url(photo/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+div.container {
+    height: 10em;
+    position: relative 
+}
+div.container h1 {
+    margin: 0;
+    background: none;
+    position: absolute;
+    top: 21%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+div.container1 a {
+    margin: 0;
+    background: none;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+div.container2 a {
+    margin: 0;
+    background: none;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+div.container3 a {
+    margin: 0;
+    background: none;
+    position: absolute;
+    top: 35%;
+    left: 80%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+#footer {
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #732d88; /* Цвет фона */
+    font-size: large;
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+}
+
+p.textt {
+    text-align: start;
+}
+
+.block_1 {
+    border: 2px white solid;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 450px;
+    margin: 15px;
+
+    position: fixed;
+    bottom: 40px; right: 0;
+}
+.block_2 {
+    border: 2px white solid;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 450px;
+    margin: 15px;
+
+    position: fixed;
+    bottom: 40px; right: 36%;
+}
+.block_3 {
+    border: 2px white solid;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 450px;
+    margin: 15px;
+
+    position: fixed;
+    bottom: 40px;
+}

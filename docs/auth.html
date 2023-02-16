@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head> 
+
+<title>Страница авторизации</title>
+
+</head>
+
+<body>
+    
+    <h1 id="pisapopa">Авторизируйтесь зачем хз</h1>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Логин">
+   
+    <br><br>
+    <label>Password:</label>
+    <input type="password" id="password" placeholder="Пароль">
+    
+    <br><br>
+    <input type="button" value="Нажми на меня нежно" onclick="login()">
+    <br><br>
+    <input type="button" value="Нажми на меня более нежно" onclick="login1()">
+    <br><br>
+    <input type="button" value="Нажми на меня ЕЩЕ более нежно" onclick="login2()">
+
+</body>
+
+<script>
+    function login()    {
+        alert("На меня нежно нажали!");
+        elem = document.getElementById("pisapopa");
+        elem.innerHTML = "Авторизируйтесь зачем хз";
+    }
+
+    function login1()    {
+        elem = document.getElementById("pisapopa");
+        elem.innerHTML = "pisapopia";
+    }
+
+    function login2()    {
+        elem = document.getElementById('username');
+        username = elem.value;
+        
+        if (username == "pisapopa") {
+            alert("да вы писяпопа");
+            window.open("aboba.html")
+        }
+        else {
+            alert("Вы не писяпопа, вы - " + username)
+        }
+    }
+</script>
+
+</html>
